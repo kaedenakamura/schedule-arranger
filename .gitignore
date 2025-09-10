@@ -2,3 +2,7 @@ node_modules/
 yarn.lock
 *.log
 .env
+
+/src/generated/prisma
+public/javascripts/bundle.js
+public/stylesheets/bundle.css
