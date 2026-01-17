@@ -99,7 +99,3 @@ npm test
 ```bash
 npx webpack --watch
 ```
-
-## ライセンス
-
-MIT
