@@ -63,10 +63,10 @@ model Availability {
   @@map(name: "availabilities")
 }
 model Comment {
-  scheduleId String @db.Uuid
+  scheduleId String   @db.Uuid
   userId     Int
-  comment    String @db.VarChar(255)
-    user       User     @relation(fields: [userId], references: [userId], onDelete: Cascade)
+  comment    String   @db.VarChar(255)
+  user       User     @relation(fields: [userId], references: [userId], onDelete: Cascade)
   schedule   Schedule @relation(fields: [scheduleId], references: [scheduleId], onDelete: Cascade)
 
   @@id([scheduleId, userId], name: "commentCompositeId")
