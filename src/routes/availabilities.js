@@ -3,7 +3,7 @@ const ensureAuthenticated = require('../middlewares/ensure-authenticated');
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient({ log: ['query'] });
 const { z } = require("zod");
-const { zValidata, zValidator } =require("@hono/zod-validator");
+const { zValidator } = require("@hono/zod-validator");
 const { NoEmitOnErrorsPlugin, ids } = require('webpack');
 const { error } = require('jquery');
 
